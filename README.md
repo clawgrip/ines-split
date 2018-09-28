@@ -10,7 +10,7 @@ Developed with Python 3 under 64-bit Windows.
 
 ## Example
 
-Extract the CHR-ROM data from `Super Mario Bros. (W) [!].nes` to `smb.chr`:
+Extract the PRG-ROM data to `smb.prg` and the CHR-ROM data to `smb.chr` from `smb.nes`:
 ```
-python ines-extract.py "Super Mario Bros. (W) [!].nes" c "smb.chr"
+python ines-extract.py -p smb.prg -c smb.chr smb.nes
 ```
