@@ -88,15 +88,12 @@ def warning(text, file = None):
 
 def parse_iNES_header(header, filename):
     """Parse an iNES header."""
-
     # extract fields
     fields = struct.unpack("4s4B8s", header)
     (id, prgBanks, chrBanks, flags6, flags7, reservedBytes) = fields
-
     # extract flags
     trainer = bool((flags6 >> 2) & 0b1)
     reservedFlags = flags7 & 0b1111
-
     # validate fields
     if id != b"NES\x1a":
         error(INES_ERROR, "invalid identifier in header", filename)
@@ -145,7 +142,6 @@ def get_iNES_info(handle):
 def read_file_in_chunks(handle, start, bytesLeft):
     """Yield a slice from a file in chunks."""
     handle.seek(start)
-
     while bytesLeft > 0:
         chunkSize = min(bytesLeft, FILE_BUFFER_MAX_SIZE)
         yield handle.read(chunkSize)
