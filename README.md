@@ -1,5 +1,5 @@
 # ines-extract
-Extracts the Trainer, the PRG-ROM or the CHR-ROM from an iNES file ([Nintendo Entertainment System](http://en.wikipedia.org/wiki/Nintendo_Entertainment_System) (NES) ROM, extension `.nes`).
+Extracts the Trainer, the PRG-ROM or the CHR-ROM from an iNES ROM file (extension `.nes`).
 
 Hint: my [`ines-combine.py`](http://github.com/qalle2/ines-combine/) does the reverse thing (combines the data files back to an iNES ROM file).
 
