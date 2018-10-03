@@ -12,5 +12,5 @@ Developed with Python 3 under 64-bit Windows.
 
 Extract the PRG-ROM data to `smb.prg` and the CHR-ROM data to `smb.chr` from `smb.nes`:
 ```
-python ines-extract.py -p smb.prg -c smb.chr smb.nes
+python ines_extract.py -p smb.prg -c smb.chr smb.nes
 ```
