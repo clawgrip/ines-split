@@ -19,13 +19,14 @@ Syntax: *output_files* *input_file*
   * copy PRG-ROM data (16 KiB to 4,080 KiB) to *file*
 * `-c` *file* or `--chr-rom`=*file*
   * copy CHR-ROM data (8 KiB to 2,040 KiB) to *file*
-The files must not already exist (they will not be overwritten).
+
+At least one output file is required. The files must not already exist (they will not be overwritten).
 
 ### *input_file*
   * The iNES ROM file to read.
 
 ## Example
-Extract the PRG-ROM data to `smb.prg` and the CHR-ROM data to `smb.chr` from `smb.nes`:
+Split `smb.nes` to `smb.prg` (PRG-ROM data) `smb.chr` (CHR-ROM data):
 ```
 python ines_split.py -p smb.prg -c smb.chr smb.nes
 ```
