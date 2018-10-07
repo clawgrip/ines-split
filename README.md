@@ -32,3 +32,4 @@ python ines_split.py -p smb.prg -c smb.chr smb.nes
 
 ## References
 * [NESDev Wiki – iNES](http://wiki.nesdev.com/w/index.php/INES)
+* [*Bit Twiddling Hacks* &ndash; Determining if an integer is a power of 2](http://graphics.stanford.edu/~seander/bithacks.html#DetermineIfPowerOf2)
